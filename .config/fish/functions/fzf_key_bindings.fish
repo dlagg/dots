@@ -1,0 +1,1 @@
+/home/dlag/.fzf/shell/key-bindings.fish
