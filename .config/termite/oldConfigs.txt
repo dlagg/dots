@@ -1,0 +1,168 @@
+## Termite Styling Program
+## Author : Aditya Shakya
+
+[options]
+
+allow_bold = true
+audible_bell = true
+browser = xdg-open
+clickable_url = true
+cursor_blink = system
+cursor_shape = block
+dynamic_title = true
+filter_unmatched_urls = true
+font = DejaVuSansMono Nerd Font 16
+geometry = 480x280
+icon_name = terminal
+modify_other_keys = false
+mouse_autohide = false
+scroll_on_output = false
+scroll_on_keystroke = true
+scrollback_lines = 15000
+size_hints = false
+search_wrap = true
+urgent_on_bell = true
+highlight = #30343e
+
+[colors]
+#DARK BLUE: 82aaff (en color 2 y 10)
+
+#foreground=#c9ccd3
+foreground=#ffffff
+background=#263238
+#cursor=#c9ccd3
+cursor=#ff0035
+
+color0=#2c393f
+color1=#8bd649
+color2=#364bf3
+color3=#89ddff
+color4=#ea9560
+color5=#ec5f67
+color6=#ec5f67
+#color7=#cdd3de
+color8=#707880
+
+color9=#8bd649
+color10=#364bf3
+color11=#89ddff
+color12=#ea9560
+color13=#ec5f67
+color14=#ffffff
+color15=#d5dbe6
+---------
+## Termite Styling Program PERSONALIZADO 
+## Author : Aditya Shakya
+
+[options]
+
+allow_bold = true
+audible_bell = true
+browser = xdg-open
+clickable_url = true
+cursor_blink = system
+cursor_shape = block
+dynamic_title = true
+filter_unmatched_urls = true
+font = FuraCode Nerd Font 15
+geometry = 480x280
+icon_name = terminal
+modify_other_keys = false
+mouse_autohide = false
+scroll_on_output = false
+scroll_on_keystroke = true
+scrollback_lines = 15000
+size_hints = false
+search_wrap = true
+urgent_on_bell = true
+highlight = #30343e
+
+[colors]
+
+# Base16 Isotope
+# Scheme: Jan T. Sott
+
+foreground=   #d0d0d0
+background=   #000000
+cursor= #ff0000
+
+color0=       #000000
+#color1=       #ff0000
+color1=       #0066ff
+color2=       #33ff00
+color3=       #ff0099
+#color4=       #0066ff
+color4=       #ff0000
+color5=       #cc00ff
+color6=       #00ffff
+color7=       #d0d0d0
+
+color8=       #808080
+#color9=       #ff0000
+color9=      #0066ff
+color10=      #33ff00
+color11=      #ff0099
+#color12=      #0066ff
+color12=      #ff0000
+color13=      #cc00ff
+color14=      #00ffff
+color15=      #ffffff
+
+color16=      #ff9900
+color17=      #3300ff
+color18=      #404040
+color19=      #606060
+color20=      #c0c0c0
+color21=      #e0e0e0
+---------
+## Termite Styling Program
+## Author : Aditya Shakya
+
+[options]
+
+allow_bold = true
+audible_bell = true
+browser = xdg-open
+clickable_url = true
+cursor_blink = system
+cursor_shape = block
+dynamic_title = true
+filter_unmatched_urls = true
+font = Iosevka Nerd Font 10
+geometry = 480x280
+icon_name = terminal
+modify_other_keys = false
+mouse_autohide = false
+scroll_on_output = false
+scroll_on_keystroke = true
+scrollback_lines = 15000
+size_hints = false
+search_wrap = true
+urgent_on_bell = true
+highlight = #30343e
+
+[colors]
+
+#https://github.com/hukl/Smyck-Color-Scheme/blob/master/colors
+background=#212121
+foreground=#f7f7f7
+cursor=#218693
+
+color0=#000000
+color1=#c75646
+color2=#8eb33b
+color3=#d0b03c
+color4=#4e90a7
+#color5=#c8a0d1
+color5=crimson
+color6=#218693
+color7=#b0b0b0
+color9=#e09690
+color8=#5d5d5d
+color10=#cdee69
+color11=#ffe377
+color12=#9cd9f0
+#color13=#fbb1f9
+color13=crimson
+color14=#77dfd8
+color15=#f7f7f7

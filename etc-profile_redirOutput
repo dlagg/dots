@@ -1,0 +1,84 @@
+# /etc/profile
+
+# Set our umask
+umask 022
+
+# Append our default paths
+appendpath () {
+    case ":$PATH:" in
+        *:"$1":*)
+            ;;
+        *)
+            PATH="${PATH:+$PATH:}$1"
+    esac
+}
+
+appendpath '/usr/local/sbin'
+appendpath '/usr/local/bin'
+appendpath '/usr/bin'
+
+#PERSONALES
+#appendpath '/home/dlag/.npm-global-packages/bin'
+appendpath '/home/dlag/.local/share/npm/bin'
+appendpath '/home/dlag/.local/bin'
+
+unset appendpath
+
+export PATH
+
+# Load profiles from /etc/profile.d
+if test -d /etc/profile.d/; then
+	for profile in /etc/profile.d/*.sh; do
+		test -r "$profile" && . "$profile"
+	done
+	unset profile
+fi
+
+# Source global bash config
+if test "$PS1" && test "$BASH" && test -z ${POSIXLY_CORRECT+x} && test -r /etc/bash.bashrc; then
+	. /etc/bash.bashrc
+fi
+
+# Termcap is outdated, old, and crusty, kill it.
+unset TERMCAP
+
+# Man is much better than us at figuring this out
+unset MANPATH
+
+#PERSONALES
+export EDITOR=nvim
+export VISUAL=nvim
+export BROWSER=/usr/bin/brave
+
+#Colored Man pages
+export LESS_TERMCAP_mb=$'\e[1;32m'
+export LESS_TERMCAP_md=$'\e[1;32m'
+export LESS_TERMCAP_me=$'\e[0m'
+export LESS_TERMCAP_se=$'\e[0m'
+export LESS_TERMCAP_so=$'\e[01;33m'
+export LESS_TERMCAP_ue=$'\e[0m'
+export LESS_TERMCAP_us=$'\e[1;4;31m'
+
+#Cleaning HOM
+export XDG_CONFIG_HOME=~/.config
+export XDG_CACHE_HOME=~/.cache
+export XDG_DATA_HOME=~/.local/share
+
+export ZDOTDIR=~/.config/zsh
+export HISTFILE=~/.config/zsh/history
+export NUGET_PACKAGES=~/.config/nuget/packages
+export NVM_DIR=~/.config/nvm
+export SCREENRC=~/.config/screen/screenrc
+export ANDROID_SDK_HOME=~/.config/android
+export ADB_VENDOR_KEY=~/.config/android
+#export ECLIPSE_HOME=~/.config/eclipse (no work, check)
+export _JAVA_OPTIONS=-Djava.util.prefs.userRoot=~/.config/java 
+export LESSKEY=~/.config/less/lesskey
+export LESSHISTFILE=~/.config/less/history
+export GTK2_RC_FILES=~/.config/gtk-2.0/gtkrc
+export ICEAUTHORITY=~/.cache/ICEauthority
+export NODE_REPL_HISTORY=~/.config/node_repl_history
+export WGETRC=~/.config/wgetrc
+export PASSWORD_STORE_DIR="$XDG_DATA_HOME"/pass
+export GNUPGHOME="$XDG_DATA_HOME"/gnupg
+export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc

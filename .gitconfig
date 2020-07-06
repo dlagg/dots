@@ -1,0 +1,7 @@
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	s = status
+	pm = push origin master
+[user]
+	email = idroj07@gmail.com
+	name = dlagg
