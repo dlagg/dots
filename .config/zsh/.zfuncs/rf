@@ -10,12 +10,12 @@ wifi=$(rfkill list | sed -n $wifiLineN | tr -d [:blank:] | tr -d '\n' | cut -z -
 
 seleccion=$(echo -se $bt'\n'$wifi | dmenu -nf red -b green -sf red -fn 12)
 
-if [ echo $seleccion | grep -e 'no' ]; then
+if [[  echo $seleccion | grep -e 'no' ]]; then
     numNo=$(echo $seleccion | cut -c 1) 
     rfkill block $(echo $numNo)
     echo 'BLOQUEADO'
 
-elif [ echo $seleccion | grep -e 'yes' ]; then
+elif [[  echo $seleccion | grep -e 'yes' ]]; then
     numYes=$(echo $seleccion | cut -c 1) 
     rfkill unblock $(echo $numYes)
     echo 'DESBLOQUEADO'
