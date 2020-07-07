@@ -1,0 +1,3 @@
+seleccion $(lsblk -Po NAME,MOUNTPOINT | cut -d '=' -f 3 | tr -d '"' | grep -e 'mnt' -e 'run' | dmenu -nf red -sb green -sf red -fn 12)
+sudo umount -l (echo $seleccion)
+
