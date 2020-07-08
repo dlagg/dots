@@ -117,7 +117,7 @@ bindkey '^ ' autosuggest-accept
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias v="nvim"
 alias a="cd .."
-alias sour="source ~/.zshrc"
+alias sour="source ~/.config/zsh/.zshrc"
 alias cl="clear && pwd && ls"
 alias cla="clear && pwd && ls -a"
 alias r="ranger"
@@ -133,6 +133,8 @@ alias fix2monitors="xrandr --output DP2-2 --right-of eDP1 --auto"
 alias fixmonitor="xrandr --auto"
 alias random="cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 20 | head -n 1"
 alias record="ffmpeg -f alsa -i hw:0 $(random).wav"
+alias esp="setxkbmap -layout es"
+alias eng="setxkbmap -layout us"
 
 alias dbnetDrop="dotnet ef database drop -f -c ClaveSolDbContext && dotnet ef database drop -f -c ApplicationDbContext"
 #
