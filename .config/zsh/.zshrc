@@ -6,6 +6,10 @@ export ZSH="/home/dlag/.config/zsh/.oh-my-zsh"
 #Path of z ohmyzsh Plugin
 export _Z_DATA="$HOME/.config/zsh/.z"
 
+#XBINDKEYS XDG Directory Specification
+xbindkeys -f "$XDG_CONFIG_HOME"/xbindkeys/config
+
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -165,4 +169,5 @@ fi
 #MANPATH="$NPM_PACKAGES/share/man $MANPATH"
 
 #xmodmap -e "keycode 9 = Caps_Lock" && xmodmap -e "keycode 66 = Escape"
-udiskie &!
+##udiskie &!
+#setxkbmap -option caps:swapescape #NO COMPATIBLE CON VSCODE-VIM
