@@ -1119,4 +1119,4 @@ client.urgent           #d42121 #d42121 #f7f7f7 #d42121
 
 #PERSONALES:
 exec ~/apksManual/scriptsYtmps/.batt.sh &
-bindsym Mod+N exec --no-startup-id Notion; focus
+bindsym $mod+N exec --no-startup-id ~/apksManual/lotion/Lotion/Lotion; focus
