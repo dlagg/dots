@@ -139,6 +139,8 @@ alias random="cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 20 | head -n 1"
 alias record="ffmpeg -f alsa -i hw:0 $(random).wav"
 alias esp="setxkbmap -layout es"
 alias eng="setxkbmap -layout us"
+alias lanmap="nmap -sn 192.168.1.0/24"
+alias ssh="ssh -F /home/.config/ssh/config"
 
 alias dbnetDrop="dotnet ef database drop -f -c ClaveSolDbContext && dotnet ef database drop -f -c ApplicationDbContext"
 #
