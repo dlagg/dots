@@ -5,6 +5,8 @@
 export ZSH="/home/dlag/.config/zsh/.oh-my-zsh"
 #Path of z ohmyzsh Plugin
 export _Z_DATA="$HOME/.config/zsh/.z"
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+gpgconf --launch gpg-agent
 
 #XBINDKEYS XDG Directory Specification
 xbindkeys -f "$XDG_CONFIG_HOME"/xbindkeys/config
@@ -140,7 +142,7 @@ alias record="ffmpeg -f alsa -i hw:0 $(random).wav"
 alias esp="setxkbmap -layout es"
 alias eng="setxkbmap -layout us"
 alias lanmap="nmap -sn 192.168.1.0/24"
-alias ssh="ssh -F /home/.config/ssh/config"
+alias ssh="ssh -F /home/dlag/.config/ssh/config"
 
 alias dbnetDrop="dotnet ef database drop -f -c ClaveSolDbContext && dotnet ef database drop -f -c ApplicationDbContext"
 #

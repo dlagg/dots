@@ -461,7 +461,7 @@ exec_always --no-startup-id numlockx on
 exec --no-startup-id volumeicon
 
 #variety
-exec --no-startup-id variety
+#exec --no-startup-id variety #Quiero usar wp statico con feh
 
 # clipman
 #exec --no-startup-id xfce4-clipman
@@ -470,7 +470,7 @@ exec --no-startup-id variety
 #exec --no-startup-id conky -c ~/.config/i3/system-overview
 
 #feh sets wallpaper
-exec --no-startup-id feh --bg-fill /home/dlag/pics/wallp/dunas.jpg &
+exec --no-startup-id feh --bg-fill /home/dlag/pics/redhatWp.png &
 
 #Polybar
 #exec_always --no-startup-id ~/.config/polybar/launch.sh &
