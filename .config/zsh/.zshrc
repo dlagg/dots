@@ -144,6 +144,8 @@ alias eng="setxkbmap -layout us"
 alias lanmap="nmap -sn 192.168.1.0/24"
 alias ssh="ssh -F /home/dlag/.config/ssh/config"
 alias notas="nvim /home/dlag/synIT/notas/generales-notas.md"
+alias tiempo="curl -H 'Accept-Language: es' wttr.in/Alicante"
+alias aa="bluetoothctl connect 90:7F:61:00:29:73"
 
 alias dbnetDrop="dotnet ef database drop -f -c ClaveSolDbContext && dotnet ef database drop -f -c ApplicationDbContext"
 #

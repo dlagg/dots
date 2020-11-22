@@ -1119,5 +1119,8 @@ client.urgent           #d42121 #d42121 #f7f7f7 #d42121
 
 #PERSONALES:
 exec ~/apksManual/scriptsYtmps/.batt.sh &
-bindsym $mod+N exec --no-startup-id ~/apksManual/lotion/Lotion/Lotion; focus
-bindsym $mod+M exec termite -e "nvim /home/dlag/synIT/notas/generales-notas.md"; focus
+bindsym $mod+N exec --no-startup-id notion-app ; focus
+#bindsym $mod+N exec --no-startup-id ~/apksManual/lotion/Lotion/Lotion; focus
+#
+#QuickNotes
+#bindsym $mod+Mod1+N exec termite -e "nvim /home/dlag/synIT/notas/generales-notas.md"; focus

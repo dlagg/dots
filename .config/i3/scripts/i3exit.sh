@@ -3,7 +3,8 @@
 
 case "$1" in
     lock)
-        slimlock
+        #slimlock
+        /home/dlag/apksManual/i3lock-multimonitor/lock -i /home/dlag/pics/redhatWallpaper.png
         ;;
     logout)
         i3-msg exit
