@@ -122,7 +122,7 @@ bindkey '^ ' autosuggest-accept
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias v="nvim"
-alias a="cd .."
+alias a="cd .. ; cl"
 alias sour="source ~/.config/zsh/.zshrc"
 alias cl="clear && pwd && ls"
 alias cla="clear && pwd && ls -a"
@@ -148,6 +148,7 @@ alias tiempo="curl -H 'Accept-Language: es' wttr.in/Alicante"
 alias aa="bluetoothctl connect 90:7F:61:00:29:73"
 
 alias dbnetDrop="dotnet ef database drop -f -c ClaveSolDbContext && dotnet ef database drop -f -c ApplicationDbContext"
+alias crypt="gpg --symmetric --s2k-count 65011712 --s2k-digest-algo SHA512 --s2k-cipher-algo AES256"
 #
 #Cleaning home
 alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'

@@ -29,25 +29,25 @@ highlight = #30343e
 # https://github.com/chriskempson/base16-xresources/blob/master/base16-paraiso.light.256.xresources
 # Base16 Paraiso
 # Scheme: Jan T. Sott
-foreground=#4f424c
+foreground=#1b1b3a
 background=#CCD1D1
 cursor=#4f424c
 
 color0=#2f1e2e
-color1=#ef6155
-color2=#9B59B6
+color1=#285943
+color2=#83019d
 color3=#fec418
-color4=#06b6ef
+color4=#0045e6
 color5=#815ba4
 color6=#5bc4bf
 color7=#a39e9b
 color8=#776e71
 color9=#ef6155
-color10=#48b685
-color11=#fec418
-color12=#06b6ef
+color10=#575757
+color11=#721849
+color12=#0045e6
 color13=#815ba4
-color14=#5bc4bf
+color14=#83019d
 color15=#e7e9db
 
 color16=#f99b15

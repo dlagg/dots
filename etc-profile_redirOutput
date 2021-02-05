@@ -72,7 +72,7 @@ export SCREENRC=~/.config/screen/screenrc
 export ANDROID_SDK_HOME=~/.config/android
 export ADB_VENDOR_KEY=~/.config/android
 #export ECLIPSE_HOME=~/.config/eclipse (no work, check)
-export _JAVA_OPTIONS=-Djava.util.prefs.userRoot=~/.config/java 
+#export _JAVA_OPTIONS=-Djava.util.prefs.userRoot=~/.config/java 
 export LESSKEY=~/.config/less/lesskey
 export LESSHISTFILE=~/.config/less/history
 export GTK2_RC_FILES=~/.config/gtk-2.0/gtkrc
