@@ -1,0 +1,4 @@
+# 1º download updated trackers list to home & delete white spaces. (override).
+curl https://ngosang.github.io/trackerslist/trackers_all.txt | grep -v -e '^$' > ~/.ngosangAllTrackers
+# 2º APPLY command (view history) to file
+trackers=(echo $(cat ~/.ngosangAllTrackers)); for t in $trackers; transmission-edit -a $t $1

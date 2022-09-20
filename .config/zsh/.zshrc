@@ -136,7 +136,7 @@ alias paqc="sudo pacman -Qc --noconfirm"
 alias up="sudo pacman -Syu"
 alias notion="/home/dlag/apksManual/lotion/Lotion/Lotion"
 alias fix2monitors="xrandr --output DP2-2 --right-of eDP1 --auto"
-alias fixmonitor="xrandr --auto"
+alias fix2kmonitor="xrandr --output DP2-2 --right-of eDP1 --mode 2560x1440_60.00"
 alias random="cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 20 | head -n 1"
 alias record="ffmpeg -f alsa -i hw:0 $(random).wav"
 alias esp="setxkbmap -layout es"
@@ -146,8 +146,9 @@ alias ssh="ssh -F /home/dlag/.config/ssh/config"
 alias notas="nvim /home/dlag/synIT/notas/generales-notas.md"
 alias tiempo="curl -H 'Accept-Language: es' wttr.in/Alicante"
 alias aa="bluetoothctl connect 90:7F:61:00:29:73"
+alias screenCap="scrot '/tmp/%F_%T_$wx$h.png' -s -e 'xclip -selection clipboard -target image/png -i $f'"
+alias clone="termite -d $(pwd) &"
 
-alias dbnetDrop="dotnet ef database drop -f -c ClaveSolDbContext && dotnet ef database drop -f -c ApplicationDbContext"
 alias crypt="gpg --symmetric --s2k-count 65011712 --s2k-digest-algo SHA512 --s2k-cipher-algo AES256"
 #
 #Cleaning home
@@ -179,3 +180,7 @@ fi
 #xmodmap -e "keycode 9 = Caps_Lock" && xmodmap -e "keycode 66 = Escape"
 ##udiskie &!
 #setxkbmap -option caps:swapescape #NO COMPATIBLE CON VSCODE-VIM
+
+#Add working xrandr 2k Screen mode.
+#xrandr --newmode "2560x1440_60.00"  312.25  2560 2752 3024 3488  1440 1443 1448 1493 -hsync +vsync 2>/dev/null
+#xrandr --addmode DP2-2 "2560x1440_60.00"

@@ -577,7 +577,7 @@ bindsym $mod+F7 exec --no-startup-id galculator;focus
 
 #workspace 8 related
 for_window [class="Thunar"] focus
-bindsym $mod+F2 exec --no-startup-id thunar;focus
+bindsym $mod+F2 exec thunar;focus
 bindsym $mod+Shift+Return exec --no-startup-id thunar;focus
 bindsym $mod+Shift+KP_Enter exec --no-startup-id thunar;focus
 bindsym control+mod1+b exec --no-startup-id thunar;focus
